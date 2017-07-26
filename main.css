@@ -1,0 +1,446 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+	font-size:60px;
+    border: 0;
+    margin: 0;
+	color: black;
+	
+}
+h2 {
+   font-family: 'Frijole', cursive;
+	font-size:60px;
+    border: 0;
+    margin: 0;
+	color: white;
+	
+}
+
+h3 {
+    font-family: 'Cabin Sketch', cursive;
+	font-size:27px;
+    border: 0;
+    margin: 2;
+	color:white;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+   
+
+}
+
+#name-input{
+	
+	   
+    padding: 8px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+	border-radius:3px 3px 3px 3px;
+    transition-duration: 2s;
+    box-shadow: 9px 9px 80px silver;
+}
+
+#name-input:hover{
+    border-radius:60px 60px 60px 60px;
+    box-shadow: 9px 9px 80px blue;
+    transition-duration: 5s;
+      }
+
+.welcome-screen {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	background-image: url("img/back.jpg");
+	background-size:cover;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+	justify-content: center;
+    background-color: red;
+background-image: url("img/music (1).png");
+background-size:cover;
+}
+
+.main header {
+    height: 80px;
+    padding: 1rem;
+    color: #FFF;
+}
+
+.main .content {
+    flex:1;
+   }
+
+.main footer {
+    height: 80px;
+    padding-top: 1rem;
+}
+
+.player-buttons {
+    display:flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+	
+	
+}
+
+.hidden {
+    display: none;
+}
+
+.right.floated {
+    float: right;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.progress-wrapper {
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-wrapper span {
+    color: #959595;
+}
+
+.player-progress {
+    height: 8px;
+    width: 700px;
+    background-color: #3d3d3d;
+    border-radius: 4px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.progress-filled {
+    background-color: #959595;
+    height: 8px;
+    border-radius: 4px;
+    width: 0;
+
+}
+
+.main .content {
+    width: 800px;
+    margin: 2rem auto;
+}
+
+.list-headers {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.list-headers > div {
+    width: 150px;
+    display: inline-block;
+}
+
+.list-headers > div:first-child {
+    width: 330px;
+}
+
+.list-headers > div:last-child {
+    text-align: right;
+}
+
+.song-list .song {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    min-height: 30px;
+    cursor: pointer;
+}
+
+.song > span {
+    display: inline-block;
+    width: 150px;
+    overflow: hidden;
+    height: 1rem;
+}
+.song > span:first-child {
+    width: 330px;
+}
+
+.song .song-duration {
+    text-align: right;
+}
+
+.song-list .song:hover {
+    background-color: #282828;
+}
+
+
+.song-length {
+    text-align: right;
+}
+
+.content {
+    position: relative;
+}
+.current-song-wrapper {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+
+.current-song-image {
+    height: 100px;
+    width: 100px;
+    margin-right: 1rem;
+}
+
+.current-song-name {
+    font-size: 1.4rem;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.current-song-album {
+    margin-top: 0.4rem;
+}
+ /*DataTables overrides*/
+table.dataTable tbody tr {
+   background-color: initial;
+	
+}
+#songs_info {
+    display: none;
+	
+}
+
+#songs_filter {
+    color: transparent;
+	
+}
+#songs_filter input {
+    width: 400px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+	border-radius:14px;
+	input:focus(outline:none!important;)
+}
+
+.player-buttons .fa {
+    margin-right: 2rem;
+}
+
+.fa.disabled {
+    color: gray;
+}
+        
+.button-piano{
+ align:center;	
+	
+}
+
+.menu-card{
+	margin: auto;
+	
+}
+.menu{
+	height: 100%;
+    width: 100%;
+  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-image: url("img/Black-Pirate-Music-Logo-Wallpaper-Computer.jpg");
+	
+}
+.player-list{
+  display: inline-block;
+  height: 150px;
+  width: 200RRpx;
+  
+}
+.player-list-img{
+	
+    padding: 10px;
+	border: 4px solid black;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 300px;
+    background-color: lightblue;
+	width:140px; 
+    height:140px;
+    transition-duration: 3s;
+    /* transition-delay: 0.3s; */
+	border-radius:3px 3px 3px 3px;
+    box-shadow: 9px 9px 80px silver;
+}
+
+.player-list-img:hover{
+    width:140px; 
+	height:140px;
+    transition-duration:3s;
+    /* transition-delay: 0.3s; */
+	border-radius:3px 60px 3px 60px;
+    box-shadow: 9px 9px 80px blue;
+}
+.player-list-img-one{
+	
+	padding: 10px;
+	border: 4px solid black;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 300px;
+    background-color: lightblue;
+	width:140px; 
+    height:140px;
+    transition-duration: 3s;
+    /* transition-delay: 0.3s; */
+	border-radius:3px 3px 3px 3px;
+    box-shadow: 9px 9px 80px silver;
+}
+
+.player-list-img-one:hover{
+    width:140px; 
+	height:140px;
+    transition-duration: 3s;
+    /* transition-delay: 0.3s; */
+	border-radius:3px 60px 3px 60px;
+    box-shadow: 9px 9px 80px green;
+}
+ 
+
+/* 
+
+.player-list-img:hover{
+	
+	 background-color:rgb(0,155,255);
+}
+
+.player-list-img-one:hover{
+		 background-color:rgb(0,155,255);
+
+} */
+
+.selection{
+	
+	text-align:center;
+	  font-size: 250%;
+	
+}
+.menu-text{
+	color:white;
+      text-align:center;
+	  font-size:190%;
+}
+
+.back-button {
+   display: inline-block;
+  border-radius: 10px;
+  background-color: red;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 9px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 4px;
+  /* border-radius:10px; */
+  font-weight: bold;
+  transition-duration: 2s;
+}
+
+.back-button:hover {
+transition-duration: 2s;
+border-radius:20px;
+background: green;
+}
+
+.back-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 9px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 4px;
+  /* border-radius:10px; */
+  font-weight: bold;
+  transition-duration: 2s;
+}
+
+.button:hover{
+ 
+ transition-duration: 2s;
+ border-radius:20px;
+    background: green;
+ /* animation: ease-in;     */
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
